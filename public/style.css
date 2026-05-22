@@ -1,0 +1,108 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: #f3f4f6;
+    padding: 40px 20px;
+    color: #222;
+}
+
+/* Heading */
+h1{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #4f46e5;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+/* Post Box */
+.box{
+    background: white;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+}
+
+.box:hover{
+    transform: translateY(-4px);
+}
+
+/* Username */
+.user{
+    color: #4f46e5;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+/* Content */
+.content{
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+/* Buttons */
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    background: #4f46e5;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    transition: 0.3s;
+    font-size: 14px;
+}
+.del{
+        background-color: red;
+    }
+.btn:hover{
+    background: #3730a3;
+    transform: scale(1.03);
+}
+
+/* Add New Post Button */
+body > .btn{
+    display: block;
+    width: fit-content;
+    margin: 40px auto;
+    padding: 12px 22px;
+    font-size: 16px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    body{
+        padding: 20px 12px;
+    }
+
+    h1{
+        font-size: 2.2rem;
+    }
+
+    .box{
+        padding: 18px;
+    }
+    
+
+    .btn{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+}
